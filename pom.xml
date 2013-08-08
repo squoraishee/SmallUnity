@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+ http://maven.apache.org/maven-v4_0_0.xsd">
+ <parent>
+    <groupId>com.vmn.android</groupId>
+    <artifactId>bootstrap</artifactId>
+    <version>1.0.3-SNAPSHOT</version>
+</parent>
+ <modelVersion>4.0.0</modelVersion>
+ <groupId>com.vmn.android</groupId>
+ <artifactId>testcomponent</artifactId>
+ <version>1.0.3</version>
+ <packaging>jar</packaging>
+ <name>Unity Project</name>
+<developers>
+  <developer>
+    <id>${developer.id}</id>
+    <roles>
+        <role>Developer</role>
+      </roles>
+  </developer>
+</developers>
+<repositories>
+        <repository>
+            <id>mtvn-proximity</id>
+            <name>RemoteRepo</name>
+            <url>http://nexus.mtvi.com/nexus/content/repositories/snapshots</url>
+        </repository>
+         <repository>
+            <id>vmn-android-3rdparty</id>
+            <name>RemoteRepo</name>
+            <url>http://nexus.mtvi.com/nexus/content/repositories/thirdparty</url>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>mtvn-proximity</id>
+            <name>RemoteRepo</name>
+            <url>http://nexus.mtvi.com/nexus/content/groups/public/</url>
+        </repository>
+    </distributionManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>4.1.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+      </dependencies>
+      <!-- this adding a build section would overwrite the entire build process you need to inhereit a section from the parent itself -->
+      <build>
+        <finalName>vmn-boot-strap-app</finalName>
+        <sourceDirectory>src</sourceDirectory>
+      </build>
+</project> 
