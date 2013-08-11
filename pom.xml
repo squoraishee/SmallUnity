@@ -25,7 +25,7 @@
 <repositories>
         <repository>
             <id>vmn-android-snapshots</id>
-            <name>RemoteRepo</name>
+            <name>RemoteRepo1</name>
             <url>http://nexus.mtvi.com/nexus/content/repositories/snapshots</url>
         </repository>
          <repository>
