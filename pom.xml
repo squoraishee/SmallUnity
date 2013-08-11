@@ -24,7 +24,7 @@
 </developers>
 <repositories>
         <repository>
-            <id>mtvn-proximity</id>
+            <id>vmn-android-snapshots</id>
             <name>RemoteRepo</name>
             <url>http://nexus.mtvi.com/nexus/content/repositories/snapshots</url>
         </repository>
